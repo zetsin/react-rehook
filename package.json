@@ -1,6 +1,6 @@
 {
   "name": "react-rehook",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "react-rehook React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -11,7 +11,9 @@
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
+    "build": "npm-run-all build:ts build:nwb",
+    "build:nwb": "nwb build-react-component",
+    "build:ts": "tsc",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
@@ -24,9 +26,16 @@
     "react": "16.x"
   },
   "devDependencies": {
-    "nwb": "0.23.x",
+    "@types/node": "^12.7.1",
+    "@types/react": "^16.9.1",
+    "@types/react-dom": "^16.8.5",
+    "awesome-typescript-loader": "^5.2.1",
+    "esnext": "^3.3.1",
+    "npm-run-all": "^4.1.5",
+    "nwb": "^0.23.x",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "typescript": "^3.5.3"
   },
   "author": "",
   "homepage": "",

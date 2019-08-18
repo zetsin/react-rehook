@@ -1,9 +1,7 @@
-import React, {Component} from 'react'
-
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+export { default as Provider } from "./Provider";
+export { default as createStore } from "./createStore";
+export { default as useSelector } from "./useSelector";
+export { default as useDispatch } from "./useDispatch";
+export { default as applyMiddleware } from "./applyMiddleware";
+export { default as compose } from "./compose";
+//# sourceMappingURL=index.js.map

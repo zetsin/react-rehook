@@ -5,3 +5,10 @@
 /node_modules
 /umd
 npm-debug.log*
+
+.DS_Store
+
+/**/*.js.map
+/index.d.js
+/src/**/*.js
+/demo/src/**/*.js
